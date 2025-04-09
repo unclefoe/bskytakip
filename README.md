@@ -25,6 +25,15 @@ Uygulama dosyası [VirusTotal](https://www.virustotal.com/gui/url/efa01e800e5186
 ## Kaynak Kod
 Açık Kaynak Kodludur
 
+# Bluesky Takipçi Kontrol
+
+![Total Downloads](https://img.shields.io/github/downloads/unclefoe/bskytakip/total)
+![Release Version](https://img.shields.io/github/v/release/unclefoe/bskytakip)
+![Repo Stars](https://img.shields.io/github/stars/unclefoe/bskytakip?style=social)
+
+
+
+
 ## 📝 Lisans
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
