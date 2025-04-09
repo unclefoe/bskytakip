@@ -15,9 +15,12 @@ Uygulama dosyası [VirusTotal](https://www.virustotal.com/gui/url/efa01e800e5186
 - Splash ekran ve simgeler
 - EXE ve Setup dosyası ile çalışır
 
-## Kurulum
-1. [setup.exe] dosyasını indir
-2. Kurulumdan sonra başlat
+## 🧰 Kurulum
+
+1. 📥 [setup.exe dosyasını indir](https://github.com/unclefoe/bskytakip/releases/download/v1.0.0/bskytakip_setup.exe)
+2. Kurulum sihirbazını takip et
+3. Kurulum sonunda "Uygulamayı Başlat" seçeneğini işaretleyebilirsin
+
 
 ## Kaynak Kod
 Açık Kaynak Kodludur
