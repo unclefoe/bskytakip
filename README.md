@@ -13,4 +13,10 @@
 2. Kurulumdan sonra başlat
 
 ## Kaynak Kod
-Tamamı açık kaynak ✅ MIT lisanslıdır.
+Açık Kaynak Kodludur
+
+## 📝 Lisans
+
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+Bu proje MIT lisansı ile lisanslanmıştır. Ayrıntılar için [LICENSE](LICENSE) dosyasına göz atabilirsin.
