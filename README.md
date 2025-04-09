@@ -1,7 +1,11 @@
 # Bluesky Takipçi Kontrol
 
-🔍 [VirusTotal tarama sonucu](https://www.virustotal.com/gui/url/efa10e800e5186e609c0320daf2f9301f655bcc7fb1c6fe1298cec8c42bdc)
-💡 Uygulama dosyası VirusTotal üzerinden taranmıştır ve güvenlidir.
+## 🛡️ Güvenlik
+
+Uygulama dosyası [VirusTotal](https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection) üzerinden 97 antivirüs motoruyla taranmıştır ve **temiz** olarak işaretlenmiştir ✅
+
+[![VirusTotal Güvenlik Rozeti](https://img.shields.io/badge/VirusTotal-Temiz-44cc11?logo=virustotal)](https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection)
+
 
 🐦 Bluesky'da seni geri takip etmeyenleri gör. Python + Tkinter GUI.
 
