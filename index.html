@@ -1,15 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bluesky Takipçi Kontrol</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f2ff, #ffffff);
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      color: #007bff;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #333;
+      font-size: 18px;
+      font-weight: normal;
+    }
+    .button {
+      background-color: #007bff;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .features {
+      text-align: left;
+      max-width: 500px;
+      margin: 30px auto;
+    }
+    .features li {
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+<body>
   <h1>Bluesky Takipçi Kontrol</h1>
-  <p>Geri takip etmeyenleri listele, tek tıkla takipten çık.</p>
-  <a href="https://github.com/unclefoe/bskytakip/releases/download/v1.0.0/bskytakip_setup.exe" 
-     style="display:inline-block;padding:10px 20px;background-color:#007bff;color:white;text-decoration:none;border-radius:5px;">
-     Uygulamayı İndir
+  <h2>Geri takip etmeyenleri kolayca tespit et. Tek tıkla kontrol sende!</h2>
+
+  <div class="features">
+    <ul>
+      <li>✅ Geri takip etmeyenleri anında gör</li>
+      <li>✅ Tek tıkla takipten çık veya takibe al</li>
+      <li>✅ Şifreli giriş, splash ekranı, modern tasarım</li>
+      <li>✅ Açık kaynak, güvenli, reklamsız</li>
+    </ul>
+  </div>
+
+  <a href="https://github.com/unclefoe/bskytakip/releases/download/v1.0.0/bskytakip_setup.exe" class="button">
+    Uygulamayı Hemen İndir
   </a>
+
+  <div class="footer">
+    <p>v1.0 - MIT Lisanslı | <a href="https://github.com/unclefoe/bskytakip" target="_blank">GitHub Proje Sayfası</a></p>
+    <p>Designed by Enki (E.A.)</p>
+  </div>
 </body>
 </html>
