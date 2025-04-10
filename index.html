@@ -1,68 +1,94 @@
 <!DOCTYPE html><html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bluesky Takipçi Kontrol</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #1c1e21;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #007aff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    h2 {
+      color: #007aff;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      scroll-snap-type: x mandatory;
+      margin: 20px 0;
+    }
+    .slider img {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <header class="bg-blue-500 text-white py-6">
-    <div class="max-w-5xl mx-auto px-4">
-      <h1 class="text-3xl font-bold">Bluesky Takipçi Kontrol</h1>
-      <p class="text-sm">Geri takip etmeyenleri tespit et, hesabını yönet.</p>
-    </div>
-  </header>  <main class="max-w-5xl mx-auto px-4 py-8 space-y-10">
-    <section>
-      <h2 class="text-xl font-semibold mb-4">Özellikler</h2>
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc list-inside">
-        <li>Geri takip etmeyenleri gör</li>
-        <li>Geri takip etmediklerini listele</li>
-        <li>Toplu takip / takipten çıkarma</li>
-        <li>Engellenenleri listeleme ve engel kaldırma</li>
-        <li>Şifreli giriş ve modern arayüz</li>
-      </ul>
-    </section><section>
-  <h2 class="text-xl font-semibold mb-4">Ekran Görüntüleri</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-    <img src="screens/01.png" alt="Açılış ekranı" class="rounded shadow">
-    <img src="screens/02.png" alt="Giriş ekranı" class="rounded shadow">
-    <img src="screens/03.png" alt="Yükleniyor" class="rounded shadow">
-    <img src="screens/04.png" alt="Liste ekranı" class="rounded shadow">
-  </div>
-</section>
+<body>
+  <header>
+    <h1>Bluesky Takipçi Kontrol</h1>
+    <p>Geri takip etmeyenleri tespit et, hesabını yönet.</p>
+  </header>  <section>
+    <h2>Özellikler</h2>
+    <ul>
+      <li>Geri takip etmeyenleri gör</li>
+      <li>Geri takip etmediklerini listele</li>
+      <li>Toplu takip / takipten çıkarma</li>
+      <li>Engellenenleri listeleme ve engel kaldırma</li>
+      <li>Şifreli giriş ve modern arayüz</li>
+    </ul><h2>Ekran Görüntüleri</h2>
+<div class="slider">
+  <img src="https://github.com/user-attachments/assets/4c51cca6-4003-4b16-b386-b6f88a899b60" alt="Açılış Ekranı">
+  <img src="https://github.com/user-attachments/assets/635e5144-2e57-46d0-9374-18f05637d217" alt="Yükleme Ekranı">
+  <img src="https://github.com/user-attachments/assets/909bbfd1-ebd0-48e8-a802-ec90c5a9f865" alt="Kontrol Sonuç Ekranı">
+  <img src="https://github.com/user-attachments/assets/fe8d75a5-676d-444f-9cfd-aa4e5a40d950" alt="Liste Ekranı">
+</div>
 
-<section>
-  <h2 class="text-xl font-semibold mb-4">Kullanım Kılavuzu</h2>
-  <ol class="list-decimal list-inside space-y-2">
-    <li>Kurulum sihirbazı ile uygulamayı yükle</li>
-    <li>Kullanıcı adı ve şifreni gir</li>
-    <li>“Kontrol Et” tuşuna bas</li>
-    <li>Listeleri kullanarak işlem yap</li>
-  </ol>
-</section>
+<h2>Kullanım Kılavuzu</h2>
+<ol>
+  <li>Kurulum sihirbazı ile uygulamayı yükle</li>
+  <li>Kullanıcı adı ve şifreni gir</li>
+  <li>"Kontrol Et" tuşuna bas ve sonucu gör</li>
+  <li>Geri takip etmeyenleri ya da etmediklerini listele</li>
+  <li>Takip / takipten çık seçeneklerini kullan</li>
+</ol>
 
-<section>
-  <h2 class="text-xl font-semibold mb-4">VirusTotal Tarama</h2>
-  <p class="mb-2">Uygulama temizdir. Sonuçlara aşağıdaki linkten ulaşabilirsiniz:</p>
-  <a href="https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection" target="_blank" class="text-blue-500 underline">VirusTotal Raporunu Görüntüle</a>
-</section>
-
-<section>
-  <h2 class="text-xl font-semibold mb-4">İndir</h2>
-  <a href="https://github.com/unclefoe/bskytakip/releases/latest" class="inline-block bg-blue-500 text-white px-6 py-3 rounded shadow hover:bg-blue-600">
-    Setup Dosyasını İndir
-  </a>
-</section>
-
-<section>
-  <h2 class="text-xl font-semibold mb-4">İ̇letişim & Kaynak Kod</h2>
-  <p>
-    Kodlar ve geliştirici bilgileri için <a href="https://github.com/unclefoe/bskytakip" target="_blank" class="text-blue-500 underline">GitHub Repo</a>'sunu ziyaret edebilirsiniz.
-  </p>
-</section>
-
-  </main>  <footer class="bg-gray-100 text-center py-4 text-sm">
-    &copy; 2025 Enki (E.A.) - MIT Lisanslıdır
+  </section>  <footer>
+    &copy; 2025 Bluesky Takipçi Kontrol | MIT Lisanslı
   </footer>
 </body>
 </html>
