@@ -1,225 +1,47 @@
-<!DOCTYPE html><html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bluesky Takipçi Kontrol</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #dfefff, #f5faff);
-      color: #1c1e21;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    header h1 {
-      font-size: 2.4rem;
-      color: #0077cc;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1rem;
-      color: #444;
-    }
-    h2 {
-      color: #0077cc;
-    }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 10px;
-      scroll-snap-type: x mandatory;
-      margin: 20px 0;
-    }
-    .slider img {
-      width: 250px;
-      height: auto;
-      border-radius: 8px;
-      scroll-snap-align: start;
-      flex-shrink: 0;
-      border: 1px solid #ccc;
-    }
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .footer-link {
-      color: #007aff;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Bluesky Takipçi Kontrol</h1>
-    <p>Geri takip etmeyenleri tespit et, hesabını yönet.</p>
-  </header>  <section>
-    <h2>Özellikler</h2>
-    <ul>
-      <li>Geri takip etmeyenleri gör</li>
-      <li>Geri takip etmediklerini listele</li>
-      <li>Toplu takip / takipten çıkarma</li>
-      <li>Engellenenleri listeleme ve engel kaldırma</li>
-      <li>Şifreli giriş ve modern arayüz</li>
-    </ul><h2>Kullanım Kılavuzu</h2>
-<ol>
-  <li>Kurulum sihirbazı ile uygulamayı yükle</li>
-  <li>Kullanıcı adı ve şifreni gir</li>
-  <li>"Kontrol Et" tuşuna bas ve sonucu gör</li>
-  <li>Geri takip etmeyenleri ya da etmediklerini listele</li>
-  <li>Takip / takipten çık seçeneklerini kullan</li>
-</ol>
+# Bluesky Takipçi Kontrol
 
-<h2>VirusTotal Tarama</h2>
-<p>Uygulama temizdir. Sonuçlara aşağıdaki linkten ulaşabilirsiniz:</p>
-<a href="https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection" target="_blank" class="footer-link">VirusTotal Raporunu Görüntüle</a>
+Geri takip etmeyenleri tespit et, hesabını yönet.
 
-<h2>İndir</h2>
-<p>
-  <a href="https://github.com/unclefoe/bskytakip/releases/latest" class="footer-link">
+## Özellikler
+
+- Geri takip etmeyenleri gör  
+- Geri takip etmediklerini listele  
+- Toplu takip / takipten çıkarma  
+- Engellenenleri listeleme ve engel kaldırma  
+- Şifreli giriş ve modern arayüz
+
+<section>
+  <h2 class="text-xl font-semibold mb-4">Kullanım Kılavuzu</h2>
+  <ol class="list-decimal list-inside space-y-2">
+    <li>Kurulum sihirbazı ile uygulamayı yükle</li>
+    <li>Kullanıcı adı ve şifreni gir</li>
+    <li>“Kontrol Et” tuşuna bas</li>
+    <li>Listeleri kullanarak işlem yap</li>
+  </ol>
+</section>
+
+<section>
+  <h2 class="text-xl font-semibold mb-4">VirusTotal Tarama</h2>
+  <p class="mb-2">Uygulama temizdir. Sonuçlara aşağıdaki linkten ulaşabilirsiniz:</p>
+  <a href="https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection" target="_blank" class="text-blue-500 underline">
+    VirusTotal Raporunu Görüntüle
+  </a>
+</section>
+
+<section>
+  <h2 class="text-xl font-semibold mb-4">İndir</h2>
+  <a href="https://github.com/unclefoe/bskytakip/releases/latest" class="inline-block bg-blue-500 text-white px-6 py-3 rounded shadow hover:bg-blue-600">
     Setup Dosyasını İndir
   </a>
-</p>
+</section>
 
-<h2>İletişim & Kaynak Kod</h2>
-<p>
-  Kodlar ve geliştirici bilgileri için <a href="https://github.com/unclefoe/bskytakip" target="_blank" class="footer-link">GitHub Repo</a>'sunu ziyaret edebilirsiniz.
-</p>
+<section>
+  <h2 class="text-xl font-semibold mb-4">İletişim & Kaynak Kod</h2>
+  <p>
+    Kodlar ve geliştirici bilgileri için <a href="https://github.com/unclefoe/bskytakip" target="_blank" class="text-blue-500 underline">GitHub Repo</a>'sunu ziyaret edebilirsiniz.
+  </p>
+</section>
 
-  </section>  <footer>
-    designed by <a class="footer-link" href="https://orgutsuz.bsky.social" target="_blank">enki (E.A.)</a><br />
-    secured with <a class="footer-link" href="https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection" target="_blank">VirusTotal</a>
-  </footer>
-</body>
-</html><!DOCTYPE html><html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bluesky Takipçi Kontrol</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #dfefff, #f5faff);
-      color: #1c1e21;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    header h1 {
-      font-size: 2.4rem;
-      color: #0077cc;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1rem;
-      color: #444;
-    }
-    h2 {
-      color: #0077cc;
-    }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 10px;
-      scroll-snap-type: x mandatory;
-      margin: 20px 0;
-    }
-    .slider img {
-      width: 250px;
-      height: auto;
-      border-radius: 8px;
-      scroll-snap-align: start;
-      flex-shrink: 0;
-      border: 1px solid #ccc;
-    }
-    footer {
-      margin-top: 50px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .footer-link {
-      color: #007aff;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Bluesky Takipçi Kontrol</h1>
-    <p>Geri takip etmeyenleri tespit et, hesabını yönet.</p>
-  </header>  <section>
-    <h2>Özellikler</h2>
-    <ul>
-      <li>Geri takip etmeyenleri gör</li>
-      <li>Geri takip etmediklerini listele</li>
-      <li>Toplu takip / takipten çıkarma</li>
-      <li>Engellenenleri listeleme ve engel kaldırma</li>
-      <li>Şifreli giriş ve modern arayüz</li>
-    </ul><h2>Kullanım Kılavuzu</h2>
-<ol>
-  <li>Kurulum sihirbazı ile uygulamayı yükle</li>
-  <li>Kullanıcı adı ve şifreni gir</li>
-  <li>"Kontrol Et" tuşuna bas ve sonucu gör</li>
-  <li>Geri takip etmeyenleri ya da etmediklerini listele</li>
-  <li>Takip / takipten çık seçeneklerini kullan</li>
-</ol>
-
-<h2>VirusTotal Tarama</h2>
-<p>Uygulama temizdir. Sonuçlara aşağıdaki linkten ulaşabilirsiniz:</p>
-<a href="https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection" target="_blank" class="footer-link">VirusTotal Raporunu Görüntüle</a>
-
-<h2>İndir</h2>
-<p>
-  <a href="https://github.com/unclefoe/bskytakip/releases/latest" class="footer-link">
-    Setup Dosyasını İndir
-  </a>
-</p>
-
-<h2>İletişim & Kaynak Kod</h2>
-<p>
-  Kodlar ve geliştirici bilgileri için <a href="https://github.com/unclefoe/bskytakip" target="_blank" class="footer-link">GitHub Repo</a>'sunu ziyaret edebilirsiniz.
-</p>
-
-  </section>  <footer>
-    designed by <a class="footer-link" href="https://orgutsuz.bsky.social" target="_blank">enki (E.A.)</a><br />
-    secured with <a class="footer-link" href="https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection" target="_blank">VirusTotal</a>
-  </footer>
-</body>
-</html>
+<footer class="text-center text-sm text-gray-500 mt-8">
+  © 2025 Enki (E.A.) - MIT Lisanslıdır
+</footer>
