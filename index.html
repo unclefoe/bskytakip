@@ -1,76 +1,68 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!DOCTYPE html><html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bluesky Takipçi Kontrol</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e0f2ff, #ffffff);
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 {
-      color: #007bff;
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #333;
-      font-size: 18px;
-      font-weight: normal;
-    }
-    .button {
-      background-color: #007bff;
-      color: white;
-      padding: 14px 28px;
-      font-size: 16px;
-      margin-top: 30px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .button:hover {
-      background-color: #0056b3;
-    }
-    .features {
-      text-align: left;
-      max-width: 500px;
-      margin: 30px auto;
-    }
-    .features li {
-      margin-bottom: 10px;
-    }
-    .footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Bluesky Takipçi Kontrol</h1>
-  <h2>Geri takip etmeyenleri kolayca tespit et. Tek tıkla kontrol sende!</h2>
-
-  <div class="features">
-    <ul>
-      <li>✅ Geri takip etmeyenleri anında gör</li>
-      <li>✅ Tek tıkla takipten çık veya takibe al</li>
-      <li>✅ Şifreli giriş, splash ekranı, modern tasarım</li>
-      <li>✅ Açık kaynak, güvenli, reklamsız</li>
-    </ul>
+<body class="bg-white text-gray-800 font-sans">
+  <header class="bg-blue-500 text-white py-6">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-3xl font-bold">Bluesky Takipçi Kontrol</h1>
+      <p class="text-sm">Geri takip etmeyenleri tespit et, hesabını yönet.</p>
+    </div>
+  </header>  <main class="max-w-5xl mx-auto px-4 py-8 space-y-10">
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Özellikler</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc list-inside">
+        <li>Geri takip etmeyenleri gör</li>
+        <li>Geri takip etmediklerini listele</li>
+        <li>Toplu takip / takipten çıkarma</li>
+        <li>Engellenenleri listeleme ve engel kaldırma</li>
+        <li>Şifreli giriş ve modern arayüz</li>
+      </ul>
+    </section><section>
+  <h2 class="text-xl font-semibold mb-4">Ekran Görüntüleri</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <img src="screens/01.png" alt="Açılış ekranı" class="rounded shadow">
+    <img src="screens/02.png" alt="Giriş ekranı" class="rounded shadow">
+    <img src="screens/03.png" alt="Yükleniyor" class="rounded shadow">
+    <img src="screens/04.png" alt="Liste ekranı" class="rounded shadow">
   </div>
+</section>
 
-  <a href="https://github.com/unclefoe/bskytakip/releases/download/v1.0.0/bskytakip_setup.exe" class="button">
-    Uygulamayı Hemen İndir
+<section>
+  <h2 class="text-xl font-semibold mb-4">Kullanım Kılavuzu</h2>
+  <ol class="list-decimal list-inside space-y-2">
+    <li>Kurulum sihirbazı ile uygulamayı yükle</li>
+    <li>Kullanıcı adı ve şifreni gir</li>
+    <li>“Kontrol Et” tuşuna bas</li>
+    <li>Listeleri kullanarak işlem yap</li>
+  </ol>
+</section>
+
+<section>
+  <h2 class="text-xl font-semibold mb-4">VirusTotal Tarama</h2>
+  <p class="mb-2">Uygulama temizdir. Sonuçlara aşağıdaki linkten ulaşabilirsiniz:</p>
+  <a href="https://www.virustotal.com/gui/url/efa01e800e5186e609c0320adf2fa9301f6556bcc7fb1c8fe1298ece8c24bddb/detection" target="_blank" class="text-blue-500 underline">VirusTotal Raporunu Görüntüle</a>
+</section>
+
+<section>
+  <h2 class="text-xl font-semibold mb-4">İndir</h2>
+  <a href="https://github.com/unclefoe/bskytakip/releases/latest" class="inline-block bg-blue-500 text-white px-6 py-3 rounded shadow hover:bg-blue-600">
+    Setup Dosyasını İndir
   </a>
+</section>
 
-  <div class="footer">
-    <p>v1.0 - MIT Lisanslı | <a href="https://github.com/unclefoe/bskytakip" target="_blank">GitHub Proje Sayfası</a></p>
-    <p>Designed by Enki (E.A.)</p>
-  </div>
+<section>
+  <h2 class="text-xl font-semibold mb-4">İ̇letişim & Kaynak Kod</h2>
+  <p>
+    Kodlar ve geliştirici bilgileri için <a href="https://github.com/unclefoe/bskytakip" target="_blank" class="text-blue-500 underline">GitHub Repo</a>'sunu ziyaret edebilirsiniz.
+  </p>
+</section>
+
+  </main>  <footer class="bg-gray-100 text-center py-4 text-sm">
+    &copy; 2025 Enki (E.A.) - MIT Lisanslıdır
+  </footer>
 </body>
 </html>
